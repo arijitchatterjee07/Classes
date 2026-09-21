@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        html{
+            background-color:wheat;
+        }
+        #topic{
+            text-align: center;
+            color: brown;
+            background-color:aquamarine;
+        }
+        #button{
+            background-color:green;
+            color:white;
+        }
+        .input{
+            background-color:lightblue;
+            color:darkblue;
+            margin:auto;
+        }
+        .enter{
+            background-color:lightseagreen;
+            color:darkblue;
+        }
+    </style>
+</head>
+
+<h1 id="topic">Registration Form</h1>
+<br/>
+<form>
+<div>
+    <label class="input" for="first-name">First Name: </label>
+    <input class="enter" type="text" id="first-name" placeholder="your first name" required></input>
+</div>
+ <br/>
+<div>
+    <label class="input" for="last-name">Last Name</label>
+    <input class="enter" type="text" placeholder="your last name" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="Campus">Campus: </label>
+    <input class="enter" type="text" value="Sushant University" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="email">Email: </label>
+    <input class="enter" type="email" placeholder="you@email" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="password">Password: </label>
+    <input class="enter" type="password" placeholder="******" minlength="8" maxlength="16" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="gender">Gender</label>
+    <select class="enter" id="gender">
+        <option value="male">M</option>
+        <option value="female">F</option>
+        <option value="other">O</option>
+    </select>
+</div>
+<br/>
+<div>
+    <label class="input" for="mobile">Mobile</label>
+    <input class="enter" type="number" id="mobile" placeholder="10-digit number" min="100000000" max="9999999999" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="DOB">DOB: </label>
+    <input class="enter" type="date" id="DOB" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="age">Age: </label>
+    <input class="enter" type="number" id="age" placeholder="your age" min="0" max="150" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="ppc">Profile Picture: </label>
+    <input class="enter" type="file" id="ppc" required></input>
+</div>
+<br/>
+<br/>
+<div>
+    <button id="button" type="submit">Submit</button>
+</div>
+<br/>
+</form>
+</body>
+</html>

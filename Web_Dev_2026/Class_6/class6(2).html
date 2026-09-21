@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        html{
+            background-color:wheat;
+        }
+        #topic{
+            text-align: center;
+            color: brown;
+            background-color:aquamarine;
+        }
+        #button{
+            background-color:green;
+            color:white;
+        }
+        .input{
+            background-color:lightblue;
+            color:darkblue;
+            padding: 5px;
+            margin:auto;
+        }
+    </style>
+</head>
+
+<h1 id="topic">Registration Form</h1>
+<br/>
+<form>
+<div>
+    <label class="input" for="first-name">First Name: </label>
+    <input type="text" id="first-name" placeholder="your first name" required></input>
+</div>
+ <br/>
+<div>
+    <label class="input" for="last-name">Last Name</label>
+    <input type="text" placeholder="your last name" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="Campus">Campus: </label>
+    <input type="text" value="Sushant University" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="email">Email: </label>
+    <input type="email" placeholder="you@email" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="password">Password: </label>
+    <input type="password" placeholder="******" minlength="8" maxlength="16" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="gender">Gender</label>
+    <select id="gender">
+        <option value="male">M</option>
+        <option value="female">F</option>
+        <option value="other">O</option>
+    </select>
+</div>
+<br/>
+<div>
+    <label class="input" for="mobile">Mobile</label>
+    <input type="number" id="mobile" placeholder="10-digit number" min="100000000" max="9999999999" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="DOB">DOB: </label>
+    <input type="date" id="DOB" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="age">Age: </label>
+    <input type="number" id="age" placeholder="your age" min="0" max="150" required></input>
+</div>
+<br/>
+<div>
+    <label class="input" for="ppc">Profile Picture: </label>
+    <input type="file" id="ppc" required></input>
+</div>
+<br/>
+<br/>
+<div>
+    <button id="button" type="submit">Submit</button>
+</div>
+<br/>
+</form>
+</body>
+</html>
