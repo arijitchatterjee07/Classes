@@ -7,11 +7,15 @@
      height: 80vh;
      width:99vw;  
      background-image: url("./header.png");
-     /* background-size:80vw 80vh;  */
      background-size:cover;
      margin-left: 10px;
-     
     }
+     #logo
+     {
+      background-color:rgba(1,50,18,0.2);
+      position: fixed;
+      width:99vw;
+     }
     h1
     {
      font-family: sans-serif;
@@ -36,7 +40,8 @@
      margin-bottom: 20px;
      text-transform: uppercase;
 
-    }
+
+   }
      #gta:hover
      {
         background-color: greenyellow;
@@ -75,4 +80,17 @@
         width:1px;
         height:1px;
         margin-left: 1000px;
+     }
+     ul
+     {
+      list-style: none;
+     }
+     li::before
+     {
+        content:"✅";
+        padding-right: 2 rem;
+     }
+     #Menu
+     {
+        margin-left: 80px;
      }
